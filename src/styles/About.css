@@ -1,0 +1,60 @@
+:root {
+    --primary-color: #80bfac; 
+    --secondary-color: #004245;   
+    --white-color: #FFFFFF;  
+    --shadow: rgba(0, 66, 69, 0.2);     
+}
+
+/* Specific class for About component */
+.about-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 4rem 2rem; /* Ample padding for spacious feel */
+    background-color: var(--white-color); /* White background for contrast */
+    gap: 4rem; /* Space between items */
+    margin: 6rem 0; /* Vertical margin */
+}
+
+.about-container img {
+    max-width: 400px; /* Limit image width */
+    width: 100%; /* Ensure it scales down */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Add rounded corners */
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 600px; /* Max width for text content */
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column; /* Stack elements on smaller screens */
+        padding: 2rem 1rem; /* Adjust padding */
+        gap: 2rem; /* Reduce gap */
+    }
+
+    .about-content h2 {
+        font-size: 3rem; /* Decrease heading size */
+    }
+
+
+
+    .about-container img {
+        max-width: 100%; /* Allow image to fill width */
+    }
+}
+
+@media (max-width: 480px) {
+    .about-content h2 {
+        font-size: 2rem; /* Further decrease heading size */
+    }
+
+}

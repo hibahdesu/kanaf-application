@@ -1,0 +1,44 @@
+:root {
+    --primary-color: #80bfac; 
+    --secondary-color: #004245;   
+    --white-color: #FFFFFF;  
+    --shadow: rgba(0, 66, 69, 0.2);     
+}
+/* Button Styles */
+.styled-button {
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color)); /* Gradient background */
+    color: var(--white-color); /* Text color */
+    border: none; /* Remove border */
+    border-radius: 2rem; /* Rounded corners */
+    padding: 1rem 2rem; /* Padding */
+    font-size: 1.8rem; /* Font size */
+    cursor: pointer; /* Pointer cursor */
+    transition: all 0.3s ease; /* Smooth transition for effects */
+    outline: none; /* Remove outline */
+    position: relative; /* Position relative for pseudo-elements */
+    overflow: hidden; /* Hide overflow for pseudo-elements */
+    font-weight: 600;
+}
+/* Before pseudo-element for hover effect */
+.styled-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 300%; /* Width of the hover effect */
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2); /* Light overlay */
+    transform: translateX(-50%) translateY(-100%); /* Position it above */
+    transition: all 0.5s ease; /* Smooth transition */
+    border-radius: 25px; /* Match the button's border radius */
+}
+/* Hover effect */
+.styled-button:hover::before {
+    transform: translateX(-50%) translateY(0); /* Move it down */
+}
+/* Change button styles on hover */
+.styled-button:hover {
+    background: linear-gradient(45deg, var(--secondary-color), var(--primary-color)); /* Reverse gradient */
+    color: var(--white-color); /* Text color remains white */
+    box-shadow: 0 4px 15px var(--shadow); /* Add shadow */
+}

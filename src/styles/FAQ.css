@@ -1,0 +1,93 @@
+:root {
+    --primary-color: #80bfac; 
+    --secondary-color: #004245;   
+    --white-color: #FFFFFF;  
+    --shadow: rgba(0, 66, 69, 0.2);     
+    --accent-color: #ffcc00; /* Accent color for highlights */
+}
+
+.faq-container {
+    padding: 4rem 2rem; /* Padding for spacing */
+    background-color: var(--white-color); /* Background color */
+    box-shadow: 0 10px 30px var(--shadow); /* Enhanced shadow effect */
+    border-radius: 1rem; /* More rounded corners */
+    margin: 2rem auto; /* Centering with auto margin */
+    max-width: 800px; /* Max width for better layout */
+    position: relative; /* For pseudo-element */
+    overflow: hidden; /* Prevent overflow */
+}
+
+.faq-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1rem; /* Height of the gradient bar */
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color)); /* Gradient effect */
+    border-radius: 15px 15px 0 0; /* Rounded top corners */
+}
+
+.faq-item {
+    background-color: #f9f9f9; /* Light background for items */
+    border: 1px solid var(--primary-color); /* Border for item separation */
+    margin-bottom: 1rem; /* Space between items */
+    border-radius: 10px; /* Rounded corners */
+    padding: 2rem; /* Padding inside FAQ items */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+}
+
+.faq-item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 20px var(--shadow); /* Enhanced shadow on hover */
+}
+
+.faq-content {
+    text-align: center; /* Center the main title */
+    margin-bottom: 2rem; /* Space below the title */
+}
+
+.faq-item h3 {
+    font-size: 2.5rem; /* Large font for the title */
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); /* Gradient text */
+    -webkit-background-clip: text; /* Clip background to text */
+    -webkit-text-fill-color: transparent; /* Transparent text fill */
+    margin-bottom: 1rem; /* Space below main title */
+    text-align: end; /* Align text to the end */
+}
+
+.faq-item p {
+    font-size: 1.2rem; /* Font size for answers */
+    line-height: 1.5; /* Improved readability */
+    color: var(--secondary-color); /* Answer color */
+    text-align: end; /* Align text to the end */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .faq-container {
+        padding: 3rem 1rem; /* Adjust padding for smaller screens */
+    }
+
+    .faq-item h3 {
+        font-size: 2rem; /* Decrease font size for headings */
+    }
+
+    .faq-item p {
+        font-size: 1rem; /* Decrease font size for paragraphs */
+    }
+}
+
+@media (max-width: 480px) {
+    .faq-container {
+        padding: 2rem 1rem; /* Further decrease padding */
+    }
+
+    .faq-item h3 {
+        font-size: 1.5rem; /* Further decrease heading size */
+    }
+
+    .faq-item p {
+        font-size: 0.9rem; /* Further decrease paragraph size */
+    }
+}
