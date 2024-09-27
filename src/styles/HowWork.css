@@ -1,0 +1,68 @@
+:root {
+    --primary-color: #80bfac; 
+    --secondary-color: #004245;   
+    --third-color: #c4f8e9;
+    --fourth-color: #edfef9;
+    --white-color: #FFFFFF;  
+    --shadow: rgba(0, 66, 69, 0.2);     
+}
+
+.container {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.how-work-content {
+    margin: 4rem 0;
+}
+
+.step {
+    display: flex; /* Use flexbox to arrange image and text side by side */
+    align-items: center; /* Align items to the center */
+    margin-bottom: 5rem; /* Space between steps */
+    text-align: center;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    background-color: var(--fourth-color);
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px var(--shadow); /* Add shadow to the step */
+    width: 100%;
+}
+
+.image-container {
+    background-color: var(--third-color); /* Light background color for images */
+    border-radius: 10px; /* Rounded corners */
+    flex-shrink: 0; /* Prevent shrinking */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    font-size: 6rem; /* Adjusted for better responsiveness */
+    color: var(--primary-color);
+    
+}
+
+.text-container {
+    flex: 1; /* Allow text to take the remaining space */
+    display: flex;
+    flex-direction: column; /* Stack text vertically */
+    align-items: center; /* Center text vertically */
+}
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+    .step {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center; /* Center items */
+    }
+    
+    .image-container {
+        width: 100%;
+        
+    }
+    .text-container {
+        text-align: center; /* Center text on small screens */
+    }
+}

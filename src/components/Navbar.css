@@ -9,7 +9,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2.5rem 4rem;
+    padding: 3rem 4rem;
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); /* Gradient background */
     color: var(--white-color);
     position: fixed; 
@@ -35,7 +35,7 @@
     color: var(--white-color);
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     position: relative; /* For pseudo-element */
     padding: 0.5rem 0; /* Add vertical padding */
 }

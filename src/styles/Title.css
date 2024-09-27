@@ -14,7 +14,6 @@
         font-size: 3rem; /* Decrease heading size */
     }
 }
-
 @media (max-width: 480px) {
     .title {
         font-size: 2rem; /* Further decrease heading size */
