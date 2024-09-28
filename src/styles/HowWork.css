@@ -7,8 +7,8 @@
     --shadow: rgba(0, 66, 69, 0.2);     
 }
 
-.container {
-    padding: 2rem;
+.how-container {
+    padding: 4rem;
     max-width: 1000px;
     margin: 0 auto;
 }
@@ -29,7 +29,7 @@
     width: 100%;
 }
 
-.image-container {
+.how-image-container {
     background-color: var(--third-color); /* Light background color for images */
     border-radius: 10px; /* Rounded corners */
     flex-shrink: 0; /* Prevent shrinking */
@@ -40,10 +40,10 @@
     align-items: center;
     font-size: 6rem; /* Adjusted for better responsiveness */
     color: var(--primary-color);
-    
+    flex: 1;
 }
 
-.text-container {
+.how-text-container {
     flex: 1; /* Allow text to take the remaining space */
     display: flex;
     flex-direction: column; /* Stack text vertically */
@@ -58,11 +58,11 @@
         align-items: center; /* Center items */
     }
     
-    .image-container {
+    .how-image-container {
         width: 100%;
         
     }
-    .text-container {
+    .how-text-container {
         text-align: center; /* Center text on small screens */
     }
 }

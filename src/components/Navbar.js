@@ -16,7 +16,7 @@ const Navbar = () => {
             <div className="logo">My Logo</div>
             <div className={`nav-links ${isOpen ? 'open' : ''}`}>
                 <Link to="/contact">تواصل معنا</Link> 
-                <Link to="/appph">التطبيق</Link> 
+                <Link to="/application">التطبيق</Link> 
                 <Link to="/howwork">كيفية العمل</Link> 
                 <Link to="/aboutus">من نحن</Link> 
                 <Link to="/">الصفحه الرئيسية</Link>

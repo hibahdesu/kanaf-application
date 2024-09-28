@@ -38,9 +38,9 @@ const AboutUs = () => {
       
 
     <section className="vision-section vision-one">
-      <div className="image-container image-one">
+      <div className="image-container-about image-one">
       </div>
-      <div className="text-container">
+      <div className="text-container-about">
         <Title title='رؤيتنا' />
         <Text text='تتمثل رؤيتنا في تعزيز الزراعة المستدامة وتوفير أدوات فعالة لمزارعينا. من خلال استخدام تقنيات الذكاء الاصطناعي المتقدمة، نهدف إلى تقديم حلول مبتكرة تساعد في الكشف المبكر عن الأمراض التي تصيب أشجار النخيل، مما يضمن صحة المحاصيل وزيادة الإنتاجية.' />
       </div>
@@ -48,12 +48,12 @@ const AboutUs = () => {
 
     <section className="vision-section vision-two">
       
-      <div className="text-container">
+      <div className="text-container-about">
         <Title title='مهمتنا' />
         <Text text='مهمتنا هي تمكين المزارعين من اتخاذ قرارات مستنيرة لحماية أشجارهم. نقدم خدمة فريدة تتيح لكم تحميل صور لأشجار النخيل الخاصة بكم، حيث يقوم نظامنا الذكي بتحليل الصور وتقديم تقييم دقيق لحالة الأشجار.' />
       </div>
       
-      <div className="image-container image-two">
+      <div className="image-container-about image-two">
       </div>
     </section>
 

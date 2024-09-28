@@ -3,9 +3,12 @@
 :root {
     --primary-color: #80bfac; 
     --secondary-color: #004245;   
+    --third-color: #c4f8e9;
+    --fourth-color: #edfef9;
     --white-color: #FFFFFF;  
     --shadow: rgba(0, 66, 69, 0.2);     
 }
+
 .about-container {
     display: flex;
     justify-content: center;
@@ -16,7 +19,7 @@
     position: relative;
     width: 100%;
     height: 700px; /* Set height for the background image */
-    background-image: url('../../public/images/img2.jpg'); /* Replace with your background image */
+    background-image: url('../../public/images/photo1.png'); /* Replace with your background image */
     background-size: cover; /* Cover the entire div */
     background-position: center; /* Centering the background image */
     overflow: hidden; /* Ensure content does not overflow */
@@ -28,7 +31,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.8); /* White background with alpha */
+    background-color: rgba(255, 255, 255, 0.7); /* White background with alpha */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -52,7 +55,6 @@
 .about-title {
     margin-bottom: 2rem; /* Space below the title */
 }
-
 .about-image-container {
     width: 100%;
     display: flex;
@@ -66,6 +68,7 @@
 
 .welcome-section {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
     color: var(--white-color); /* Text color */
@@ -83,42 +86,37 @@
     text-align: center; /* Center text */
     color: var(--secondary-color); /* Use secondary color for text */
 }
-
 .vision-section {
     display: flex;
     align-items: center; /* Center vertically */
     justify-content: space-between; /* Space out the items */
     flex-wrap: wrap;
-    gap: 3rem;
-    max-width: 1200px; /* Max width for the section */
-    background-color: var(--primary-color); /* Optional: Background color */
-    border-radius: 15px; /* Rounded corners */
-    box-shadow: 0 4px 20px var(--shadow); /* Shadow for depth */
-}
-.vision-one {
+    height: 60vh;
+    gap: 2rem;
     margin: 4rem auto;
 }
-.vision-two {
-    margin: 4rem;
+.vision-one {
+    background-color: var(--third-color); /* Optional: Background color */
 }
-.image-container {
+.vision-two {
+    background-color: var(--fourth-color); /* Optional: Background color */
+}
+.image-container-about {
     flex: 1; /* Take equal space as text container */
     width: 100%;
-    height: 400px; /* Set a fixed height for the image container */
+    height: 100%; 
     background-size: cover; /* Cover the entire div */
     background-position: center; /* Center the background image */
 }
 .image-one {
-    border-radius: 15px 0px 0px 15px; 
     background-image: url('../../public/images/img6.jpg'); /* Background image */
 }
 .image-two {
-    border-radius: 0px 15px 15px 0px; 
     background-image: url('../../public/images/img4.jpg'); /* Background image */
 }
-.text-container {
-    flex: 2; /* Take more space compared to image */
-    padding: 1rem; /* Padding around the text */
+.text-container-about  {
+    flex: 1;
+    padding: 0rem 2rem;
 }
 /* Responsive Styles */
 /* Responsive Styles for Less than 1042px */
@@ -126,13 +124,6 @@
     .about-content {
         width: 70%; 
     }
-    .vision-section {
-        max-width: 1000px;
-    }
-    .image-container {
-        height: 500px ;
-    }
-
 }
 @media (max-width: 768px) {
     .about-section {
@@ -152,11 +143,8 @@
         padding: 1rem; /* Further adjust padding */
     }
     .vision-section {
-        display: block;
-        max-width: 100%;
-    }
-    .vision-one, .vision-two {
-        margin: 4rem 2rem;
+        flex-direction: column;
+        height: 80vh;
     }
 }
 
@@ -176,6 +164,10 @@
 
     .welcome-section p {
         font-size: 1rem; /* Adjust font size for small screens */
+    }
+    .vision-section {
+        flex-direction: column;
+        height: 90vh;
     }
     
 }

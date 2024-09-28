@@ -5,10 +5,11 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import AboutUs from './pages/AboutUs';
 import Contact from './pages/Contact';
 import HowWork from './pages/HowWork';
+import Application from './pages/Application';
 import Navbar from "./components/Navbar";
 import Hero from './components/Hero';
 import Footer from "./components/Footer";
-import About from './components/About';
+
 import FAQ from './components/FAQ';
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
                     <Route path='/aboutus' element={<AboutUs />} />
                     <Route path='/contact' element={<Contact />} />
                     <Route path='/howwork' element={<HowWork />} />
+                    <Route path='/application' element={<Application />} />
                 </Routes>
                 <Footer />
             </div>
