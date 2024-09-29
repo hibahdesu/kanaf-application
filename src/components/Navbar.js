@@ -13,7 +13,10 @@ const Navbar = () => {
 
     return (
         <nav className="navbar">
-            <div className="logo">My Logo</div>
+            
+            <div className="logo">
+                <img src='/images/logo.png'  alt='logo' />
+            </div>
             <div className={`nav-links ${isOpen ? 'open' : ''}`}>
                 <Link to="/contact">تواصل معنا</Link> 
                 <Link to="/application">التطبيق</Link> 

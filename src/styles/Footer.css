@@ -1,7 +1,50 @@
-/* styles/Footer.css */
+:root {
+    --primary-color: #80bfac; 
+    --secondary-color: #004245;   
+    --third-color: #c4f8e9;
+    --fourth-color: #edfef9;
+    --white-color: #FFFFFF;  
+    --gray-color: #888;
+    --shadow: rgba(0, 66, 69, 0.2);     
+}
+
 .footer {
-    background-color: #80bfac; /* Example color */
+    background-color: var(--primary-color); /* Example color */
     color: white;
     text-align: center;
-    padding: 1rem 0;
+    padding: 2rem 6rem;
 }
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--white-color);
+    padding-bottom: 2rem;
+}
+
+.footer-container img {
+    width: 120px;
+    height: 120px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--white-color);
+    gap: 1rem;
+    font-size: 1.5rem;
+}
+
+/* Remove underline from links */
+.footer-links a {
+    color: var(--white-color); /* Ensure link color matches */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold;
+}
+
+.footer-links a:hover {
+    color: var(--secondary-color)
+    }

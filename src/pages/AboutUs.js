@@ -13,7 +13,7 @@ const AboutUs = () => {
                     <div className="about-content">
                       <Title title='نحن هنا لمساعدة المزارعين في حماية أشجارهم من الأمراض والآفات' />
                       <Title title='نستخدم أحدث التقنيات لتقديم أفضل الحلول' />
-                      <Button title=' تواصل معنا' href='/contact'/>
+                      <Button title=' تواصل معنا' link='/contact'/>
                     </div>
                 </div>
             </div>

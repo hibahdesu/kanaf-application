@@ -1,0 +1,237 @@
+:root {
+    --primary-color: #80bfac; 
+    --secondary-color: #004245;   
+    --third-color: #c4f8e9;
+    --fourth-color: #edfef9;
+    --white-color: #FFFFFF;  
+    --gray-color: #888;
+    --shadow: rgba(0, 66, 69, 0.2);     
+}
+
+.image-upload-full-container {
+    background-color: var(--fourth-color);
+    border-radius: 1rem;
+    max-width: 80%; /* Adjust as needed */
+    box-shadow: 0 2px 4px var(--shadow);
+    margin: 0 auto; /* Center the container */
+    padding: 2rem;
+}
+
+.image-upload-container {
+    font-family: sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+.upload-area {
+    padding: 2rem;
+    text-align: center;
+    flex: 1;
+    order: 2;
+}
+
+.upload-icon-container {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.upload-icon {
+    width: 80px;
+    height: 80px;
+    fill: var(--primary-color); /* Icon color */
+}
+
+.upload-instructions {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--secondary-color);
+}
+
+.upload-description {
+    font-size: 14px;
+    color: var(--gray-color);
+    margin-bottom: 20px;
+}
+
+.upload-texts {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.upload-button {
+    font-size: 14px;
+    color: var(--gray-color);
+    margin-bottom: 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.upload-button:hover {
+    color: var(--secondary-color);
+}
+
+.uploaded-images {
+    display: flex;
+    flex-wrap: wrap; /* Allow images to wrap to the next line */
+    justify-content: center; /* Center the images horizontally */
+    margin-top: 20px;
+}
+
+.uploaded-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover; /* Maintain aspect ratio and cover the area */
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.dotted-border {
+    border: 3px dotted var(--secondary-color); /* Dotted border color */
+    border-radius: 1rem; /* Rounded corners */
+    padding: 1.5rem; /* Padding inside the border */
+    margin-bottom: 1.5rem; /* Space below the border */
+    text-align: center; /* Center text inside */
+    width: 90%;
+}
+
+/* Additional styles for the upload area */
+.upload-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.upload-icon-small-container {
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.upload-icon-small {
+    width: 100px;
+    height: 100px;
+    fill: #888; /* Kept as is */
+}
+
+.upload-min-photos {
+    font-size: 1.5rem;
+    color: var(--gray-color);
+}
+
+.analyze-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.analyze-button {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.analyze-button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Results section */
+.result-section {
+    flex: 1; /* Allow result section to take space */
+    padding: 2rem; /* Padding for the result section */
+    text-align: left; /* Align text to the left */
+}
+
+.results {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+}
+
+/* Heading for results */
+.results h2 {
+    margin-bottom: 1rem; /* Margin below */
+    color: var(--secondary-color); /* Primary color */
+}
+
+/* List items in the results */
+.results ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* No padding */
+}
+
+/* Individual result items */
+.results li {
+    background-color: var(--third-color); /* Light blue background */
+    margin: 1rem 0; /* Margin above and below */
+    padding: 1rem; /* Padding inside */
+    border-radius: 4px; /* Rounded corners */
+    border-right: 5px solid var(--secondary-color); /* Left border for emphasis */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .image-upload-container {
+        padding: 20px; /* Reduce padding on medium screens */
+    }
+
+    .uploaded-image {
+        width: 90px; /* Smaller images on medium screens */
+        height: 90px;
+    }
+
+    .upload-button {
+        font-size: 1rem; /* Adjust button size */
+    }
+}
+
+@media (max-width: 900px) {
+    .image-upload-full-container {
+        padding: 1.5rem; /* Less padding */
+    }
+
+    .uploaded-image {
+        width: 75px; /* Smaller images on smaller screens */
+        height: 75px;
+    }
+
+    .upload-button {
+        font-size: 0.9rem; /* Further adjust button size */
+    }
+    .upload-area {
+        order: 1;
+    }
+    .result-section {
+        order: 2;
+    }
+}
+@media (max-width: 600px) {
+    .image-upload-container {
+        padding: 10px; /* Further reduce padding on small screens */
+    }
+
+    .uploaded-image {
+        width: 60px; /* Even smaller images on small screens */
+        height: 60px;
+    }
+
+    .upload-instructions {
+        font-size: 16px; /* Adjust font size */
+    }
+
+    .upload-description {
+        font-size: 12px; /* Adjust font size */
+    }
+}

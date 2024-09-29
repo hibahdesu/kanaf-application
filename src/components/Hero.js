@@ -12,7 +12,7 @@ export default function Hero() {
             <div className='content'>
                 <Title title="اكتشف صحة نخلتك باستخدام الذكاء الاصطناعي مع كنف" />
                 <Text text=" التقط صورة لنخلتك، ودعنا نساعدك في تحديد ما إذا كانت مصابة بأمراض أم لا."/>
-                <Button title={'ابدأ الآن'}/>
+                <Button title={'ابدأ الآن'} link="/application" />
             </div>
         </div>
     );

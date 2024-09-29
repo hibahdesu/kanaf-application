@@ -9,7 +9,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3rem 4rem;
+    padding: 2rem 4rem;
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); /* Gradient background */
     color: var(--white-color);
     position: fixed; 
@@ -24,7 +24,9 @@
 .navbar:hover {
     background: linear-gradient(135deg, var(--secondary-color), var(--primary-color)); /* Reverse gradient on hover */
 }
-
+.logo img {
+    width: 120px;
+}
 .nav-links {
     display: flex;
     gap: 2rem;
@@ -64,7 +66,7 @@
 .toggle {
     display: none;
     cursor: pointer;
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: var(--white-color); /* Icon color */
 }
 
@@ -72,7 +74,7 @@
     .nav-links {
         flex-direction: column;
         position: absolute;
-        top: 90px; /* Adjust if needed */
+        top: 130px; /* Adjust if needed */
         right: 0;
         background-color: var(--primary-color);
         max-height: 0;

@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import '../styles/Contact.css';
 import Title from '../components/Title'; 
 import Text from '../components/Text';
-import Button from '../components/Button';
+import ButtonTwo from '../components/ButtonTwo';
 import emailjs from 'emailjs-com';
 
 export default function Contact() {
@@ -40,7 +40,7 @@ export default function Contact() {
                     <label htmlFor="message">الرسالة</label>
                     <textarea id="message" name="message" required></textarea>
 
-                    <Button title="إرسال" type="submit" />
+                    <ButtonTwo title="إرسال" type="submit" />
                 </form>
             </div>
         </div>
