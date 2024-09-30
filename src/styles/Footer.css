@@ -9,10 +9,12 @@
 }
 
 .footer {
-    background-color: var(--primary-color); /* Example color */
-    color: white;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); /* Gradient background */
+    color: var(--white-color);
     text-align: center;
-    padding: 2rem 6rem;
+    padding: 2rem 4rem; /* Adjusted padding */
+    position: relative; /* For positioning elements */
+    box-shadow: 0px -5px 15px var(--shadow); /* Shadow on top */
 }
 
 .footer-container {
@@ -43,8 +45,35 @@
     color: var(--white-color); /* Ensure link color matches */
     text-decoration: none; /* Remove underline */
     font-weight: bold;
+    position: relative; /* For pseudo-element */
+    padding: 0.5rem 0; /* Add vertical padding */
 }
 
 .footer-links a:hover {
-    color: var(--secondary-color)
+    color: var(--secondary-color); /* Change color on hover */
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Text shadow on hover */
+}
+
+.footer-links a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    height: 2px;
+    background: var(--white-color); /* Underline effect */
+    transform: scaleX(0);
+    transition: transform 0.3s ease; /* Smooth animation */
+}
+
+.footer-links a:hover::after {
+    transform: scaleX(1); /* Scale underline on hover */
+}
+
+/* Responsive design for footer */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center;
     }
+}

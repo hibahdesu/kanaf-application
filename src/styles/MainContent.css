@@ -1,0 +1,65 @@
+:root {
+    --primary-color: #80bfac; 
+    --secondary-color: #004245;   
+    --third-color: #c4f8e9;
+    --fourth-color: #edfef9;
+    --white-color: #FFFFFF;  
+    --gray-color: #888;
+    --shadow: rgba(0, 66, 69, 0.2);     
+}
+.main-container {
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 4rem;
+    margin: 4rem 2rem;
+}
+.main-content {
+    width: 50%;
+    margin: 2rem auto;
+    padding: 4rem;
+}
+.main-imag img{
+    width: 500px;
+}
+.one {
+    border-radius: 0rem 0rem 4rem 4rem;
+}
+.two {
+    background-color: var(--fourth-color);
+    border-radius: 4rem 4rem;
+}
+.three {
+    background-color: var(--third-color);
+    border-radius: 4rem 4rem 0rem 0rem;
+    
+}
+.one, .two, .three {
+    box-shadow: 0 2px 4px var(--shadow);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .main-container {
+        padding: 2rem; /* Reduce padding on smaller screens */
+        margin: 2rem 1rem; /* Adjust margin */
+    }
+
+    .main-content {
+        width: 90%; /* Make content wider on smaller screens */
+        padding: 2rem; /* Reduce padding */
+    }
+
+    .main-image img {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .main-content {
+        padding: 1rem; /* Further reduce padding on very small screens */
+    }
+}

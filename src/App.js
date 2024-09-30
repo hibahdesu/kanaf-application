@@ -8,6 +8,7 @@ import HowWork from './pages/HowWork';
 import Application from './pages/Application';
 import Navbar from "./components/Navbar";
 import Hero from './components/Hero';
+import MainContent from './components/MainContent';
 import Footer from "./components/Footer";
 
 import FAQ from './components/FAQ';
@@ -22,6 +23,7 @@ function App() {
                     <Route path='/' element={
                         <>
                             <Hero />
+                            <MainContent />
                             <FAQ />
                         </>
                     } />
