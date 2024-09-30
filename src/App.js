@@ -10,14 +10,15 @@ import Navbar from "./components/Navbar";
 import Hero from './components/Hero';
 import MainContent from './components/MainContent';
 import Footer from "./components/Footer";
-
 import FAQ from './components/FAQ';
+import ScrollToTop from './components/ScrollToTop'; // Import ScrollToTop
 
 function App() {
     return (
         <BrowserRouter>
             <div className="App">
                 <Navbar />
+                <ScrollToTop /> {/* Add ScrollToTop here */}
                 {/* This will show the Hero, About, FAQ, and Footer on all pages */}
                 <Routes>
                     <Route path='/' element={
