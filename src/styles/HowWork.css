@@ -24,14 +24,15 @@
     text-align: center;
     flex-wrap: wrap; /* Allow items to wrap on smaller screens */
     background-color: var(--fourth-color);
-    border-radius: 10px; /* Rounded corners */
+    border-radius: 1rem; /* Rounded corners */
     box-shadow: 0 4px 8px var(--shadow); /* Add shadow to the step */
     width: 100%;
+    gap: 2rem;
 }
 
 .how-image-container {
     background-color: var(--third-color); /* Light background color for images */
-    border-radius: 10px; /* Rounded corners */
+    border-radius: 1rem; /* Rounded corners */
     flex-shrink: 0; /* Prevent shrinking */
     display: flex;
     flex-direction: column;

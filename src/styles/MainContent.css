@@ -27,17 +27,14 @@
 }
 .one {
     border-radius: 0rem 0rem 4rem 4rem;
-}
-.two {
     background-color: var(--fourth-color);
-    border-radius: 4rem 4rem;
 }
 .three {
     background-color: var(--third-color);
     border-radius: 4rem 4rem 0rem 0rem;
     
 }
-.one, .two, .three {
+.one, .three {
     box-shadow: 0 2px 4px var(--shadow);
 }
 
