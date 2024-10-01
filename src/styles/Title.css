@@ -1,17 +1,16 @@
 .title {
-    font-size: 4rem; /* Large heading */
     background: linear-gradient(135deg, #80bfac, #004245); /* Gradient colors */
     -webkit-background-clip: text; /* Clip background to text */
     -webkit-text-fill-color: transparent; /* Make the text color transparent */
     margin-bottom: 1rem; /* Space below heading */
     text-align: center; /* Center text */
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
     .title {
-        font-size: 3rem; /* Decrease heading size */
+        font-size: 2rem; /* Decrease heading size */
     }
 }
 @media (max-width: 480px) {

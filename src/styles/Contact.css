@@ -5,49 +5,55 @@
     --shadow: rgba(0, 66, 69, 0.2);     
 }
 
-.contact-wrapper {
-    display: flex; /* Use flexbox for layout */
-    align-items: center; /* Center items vertically */
-    max-width: 1200px; /* Maximum width for the layout */
-    margin: 4rem auto; /* Center the layout */
-    height: 100vh; /* Full height of viewport */
+.contact-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    text-align: center;
 }
 
-.image-contact {
-    flex: 1; /* Take up one part of the flex container */
-    background-image: url('../../public/images/contact.png'); /* Background image */
-    background-size: cover; /* Cover the entire container */
-    background-position: center; /* Center the background image */
-    display: flex; /* Center content if needed */
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
-    height: 100%; /* Full height */
+.contact-wrapper {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; 
+    justify-content: center;
+    margin: 4rem auto; /* Center the layout */
+    background-image: url('../../public/images/contact.png'); /* Ensure the path is correct */
+    background-position: center;
+    background-size: cover;
+    overflow: hidden; /* Ensure content does not overflow */
+    padding: 2rem; /* Add padding for better spacing */
 }
 
 .contact-container {
-    flex: 1; /* Take up one part of the flex container */
     text-align: center;
     padding: 2rem; /* Padding around the container */
+    background-color: var(--white-color);
+    border-radius: 1rem;
+    margin: 4rem;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 6px 20px var(--shadow); /* Shadow for depth */
 }
 
 .contact-form {
     display: flex; /* Use flexbox for form layout */
     flex-direction: column; /* Column layout */
-    gap: 1.5rem; /* Space between form elements */
-    margin-top: 1.5rem; /* Space above the form */
+    gap: 1rem; /* Space between form elements */
+    margin-top: 1rem; /* Space above the form */
 }
 
 .contact-form label {
-    text-align: left; /* Align label text to the left */
     font-weight: bold; /* Bold font */
     color: var(--secondary-color); /* Text color */
-    font-size: 1.5rem; /* Font size */
+    font-size: 1.2rem; /* Font size */
     text-align: end; /* Align text to the end */
 }
 
 .contact-form input, 
 .contact-form textarea {
-    padding: 1rem; /* Increased padding for better touch targets */
+    padding: .6rem; /* Increased padding for better touch targets */
     border: 1px solid var(--primary-color); /* Border color */
     border-radius: 1rem; /* Rounded corners */
     width: 100%; /* Full width */
@@ -63,7 +69,7 @@
 }
 
 .contact-form textarea {
-    height: 120px; /* Set height for the textarea */
+    height: 100px; /* Set height for the textarea */
 }
 
 /* Media Queries for Responsiveness */
@@ -71,18 +77,16 @@
     .contact-wrapper {
         flex-direction: column; /* Stack elements on smaller screens */
         height: auto; /* Adjust height to fit content */
-    }
-
-    .image-contact {
-        height: 50vh; /* Adjust height for the image section */
+        padding: 1rem; /* Reduce padding for smaller screens */
     }
 
     .contact-container {
         padding: 1rem; /* Reduce padding on smaller screens */
+        margin: 2rem; /* Adjust margin for smaller screens */
     }
 
     .contact-form label {
-        font-size: 1.2rem; /* Smaller font size for labels */
+        font-size: 1rem; /* Smaller font size for labels */
     }
 
     .contact-form input, 
@@ -92,8 +96,11 @@
 }
 
 @media (max-width: 480px) {
+    .contact-container {
+        max-width: 350px;
+    }
     .contact-form label {
-        font-size: 1rem; /* Further reduce font size for mobile */
+        font-size: 0.9rem; /* Further reduce font size for mobile */
     }
 
     .contact-form input, 
@@ -102,6 +109,6 @@
     }
 
     .contact-form textarea {
-        height: 100px; /* Adjust textarea height for mobile */
+        height: 80px; /* Adjust textarea height for mobile */
     }
 }

@@ -11,7 +11,7 @@
     color: var(--white-color); /* Text color */
     border: none; /* Remove border */
     border-radius: 2rem; /* Rounded corners */
-    padding: 1rem 2rem; /* Padding */
+    padding: .6rem 2rem; /* Padding */
     font-size: 1.8rem; /* Font size */
     cursor: pointer; /* Pointer cursor */
     transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for background and shadow */

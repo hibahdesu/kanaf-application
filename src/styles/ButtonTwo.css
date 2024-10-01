@@ -10,8 +10,8 @@
     color: var(--white-color); /* Text color */
     border: none; /* Remove border */
     border-radius: 2rem; /* Rounded corners */
-    padding: 1rem 2rem; /* Padding */
-    font-size: 1.8rem; /* Font size */
+    padding: .6rem 2rem; /* Padding */
+    font-size: 1.2rem; /* Font size */
     cursor: pointer; /* Pointer cursor */
     transition: all 0.3s ease; /* Smooth transition for effects */
     outline: none; /* Remove outline */

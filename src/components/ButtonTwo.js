@@ -1,13 +1,15 @@
+// src/components/ButtonTwo.js
 import '../styles/ButtonTwo.css';
-export default function ButtonTwo({title}) {
+
+export default function ButtonTwo({ children, onClick, disabled }) {
     return (
-        <div>
-            {title == null || title === '' ? (
-                <div></div>
-            ): (
-            <button className={"styled-button-two"} style={{}}>{title}</button>
-        )}
-        </div>
-    
+        <button 
+            className={"styled-button-two"} 
+            onClick={onClick} 
+            disabled={disabled}
+            style={{ cursor: disabled ? 'not-allowed' : 'pointer' }} // Optional: Change cursor style when disabled
+        >
+            {children}
+        </button>
     );
 }

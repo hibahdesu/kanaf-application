@@ -11,12 +11,12 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    padding: 4rem 4rem;
+    padding: 2rem;
     gap: 2rem; /* Add gap between items */
 }
 
 .hero-container img {
-    max-width: 1200px; /* Set a max width for the image */
+    max-width: 600px; /* Set a max width for the image */
     width: 100%; /* Ensure it scales down */
     height: auto; /* Maintain aspect ratio */
 }
@@ -27,57 +27,23 @@
     align-items: center;
     text-align: center;
 }
-
-.hero-container .content h1 {
-    font-size: 5rem;
-}
-
-.hero-container .content h1 {
-    color: var(--secondary-color);
-}
-
-
 /* Responsive Styles */
 @media (max-width: 1200px) {
     .hero-container {
-        padding: 2rem 4rem; /* Adjust padding */
-    }
-    
-    .hero-container .content h1 {
-        font-size: 4rem; /* Decrease font size */
-    }
-    
-    .hero-container .content p {
-        font-size: 1.5rem; /* Decrease font size */
+        padding: 2rem; /* Adjust padding */
     }
 }
 
 @media (max-width: 768px) {
     .hero-container {
         flex-direction: column; /* Stack elements on smaller screens */
-        padding: 2rem 2rem;
+        padding: 2rem;
         gap: 2rem; /* Maintain gap */
-    }
-    
-    .hero-container .content h1 {
-        font-size: 3rem; 
-    }
-    
-    .hero-container .content p {
-        font-size: 1.2rem; 
     }
 }
 
 @media (max-width: 480px) {
     .hero-container {
         padding: 1rem; /* Minimal padding for small screens */
-    }
-    
-    .hero-container .content h1 {
-        font-size: 2.5rem; /* Further decrease font size */
-    }
-    
-    .hero-container .content p {
-        font-size: 1rem; /* Further decrease font size */
     }
 }

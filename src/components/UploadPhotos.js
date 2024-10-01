@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../styles/UploadPhotos.css';
 import Title from '../components/Title';
-
+import ButtonTwo from '../components/ButtonTwo';
 
 const ImageUpload = () => {
     const [photos, setPhotos] = useState([]);
@@ -44,7 +44,7 @@ const ImageUpload = () => {
         <div className='image-upload-full-container'>
             <Title title="رفع الصور" />
             <div className="image-upload-container"> 
-            <div className="result-section">
+                <div className="result-section">
                     <Title title='النتائج' />
                     {loading && <p className="loading">يتم التحليل...</p>}
 
@@ -90,9 +90,15 @@ const ImageUpload = () => {
                         </form>
                     </div>
 
-                    <button className="analyze-button" type="submit" disabled={photos.length < 3 || loading} onClick={handleSubmit}>
+                    {/* Replace the button with ButtonTwo */}
+                    <ButtonTwo 
+                        className="analyze-button" 
+                        type="button" 
+                        onClick={handleSubmit} 
+                        disabled={photos.length < 3 || loading}
+                    >
                         {loading ? "يتم التحليل..." : "تحليل"}
-                    </button>
+                    </ButtonTwo>
                 </div>
             </div>
         </div>

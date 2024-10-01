@@ -18,30 +18,34 @@ export default function Contact() {
             })
             .catch((error) => {
                 alert('Failed to send message, please try again.');
-                console.error('Error:', error); // Log the entire error object
+                console.error('Error:', error);
             });
     };
 
     return (
-        <div className="contact-wrapper">
-            <div className="image-contact">
-                
-            </div>
-            <div className="contact-container">
+        <div className="">
+            <div className='contact-text'>
                 <Title title="تواصل معنا" />
                 <Text text="إذا كان لديك أي استفسارات أو تعليقات، يرجى ملء النموذج أدناه وسنكون سعداء للرد عليك." />
-                <form className="contact-form" ref={formRef} onSubmit={sendEmail}>
-                    <label htmlFor="name">الإسم</label>
-                    <input type="text" id="name" name="user_name" required />
+            </div>
+            <div className="contact-wrapper">
+                <div className="contact-container">
+                    <form className="contact-form" ref={formRef} onSubmit={sendEmail}>
+                        <label htmlFor="name">الإسم</label>
+                        <input type="text" id="name" name="user_name" required />
 
-                    <label htmlFor="email">البريد الإلكتروني</label>
-                    <input type="email" id="email" name="user_email" required />
+                        <label htmlFor="email">البريد الإلكتروني</label>
+                        <input type="email" id="email" name="user_email" required />
 
-                    <label htmlFor="message">الرسالة</label>
-                    <textarea id="message" name="message" required></textarea>
+                        <label htmlFor="message">الرسالة</label>
+                        <textarea id="message" name="message" required></textarea>
 
-                    <ButtonTwo title="إرسال" type="submit" />
-                </form>
+                        {/* Updated ButtonTwo usage */}
+                        <ButtonTwo type="submit">
+                            إرسال
+                        </ButtonTwo>
+                    </form>
+                </div>
             </div>
         </div>
     );
